@@ -4,7 +4,7 @@ const projectLinks = [
   { label: "Daily Cause List", href: "#projects" },
   { label: "Grabha", href: "https://grabha.in" },
   { label: "digiSeva", href: "#projects" },
-  { label: "Kshethradanam", href: "https://kshethradanam.org" },
+  { label: "Kshethradanam", href: "https://kshetradanam.org" },
 ];
 
 const companyLinks = [

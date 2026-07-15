@@ -1,4 +1,4 @@
-import { GitHubIcon } from "./icons";
+import { EmailIcon, GitHubIcon } from "./icons";
 
 const projectLinks = [
   { label: "Daily Cause List", href: "#projects" },
@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="border-t-[0.5px] border-border">
       <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-10 sm:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
           <div>
             <p className="font-script text-2xl text-gold">Anjaneya Tech Labs</p>
             <p className="mt-3 text-sm text-text-secondary">
@@ -32,6 +32,13 @@ export default function Footer() {
                 className="hover:text-gold"
               >
                 <GitHubIcon className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:hello@anjaneyatechlabs.in"
+                aria-label="Email"
+                className="hover:text-gold"
+              >
+                <EmailIcon className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -64,6 +71,17 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-medium text-text">Contact</h3>
+            <ul className="mt-4 space-y-2 text-sm text-text-secondary">
+              <li>
+                <a href="mailto:hello@anjaneyatechlabs.in" className="hover:text-text">
+                  hello@anjaneyatechlabs.in
+                </a>
+              </li>
             </ul>
           </div>
         </div>

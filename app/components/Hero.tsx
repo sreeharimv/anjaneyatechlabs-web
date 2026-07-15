@@ -22,7 +22,7 @@ export default function Hero() {
         className="mt-10 w-full max-w-xs md:max-w-sm"
       />
 
-      <h1 className="mt-10 text-3xl font-semibold tracking-tight text-text md:text-4xl">
+      <h1 className="mt-10 max-w-xl font-serif text-xl font-normal tracking-tight text-text md:text-2xl">
         Software that solves real problems, built in India. 🇮🇳
       </h1>
 

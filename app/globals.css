@@ -29,6 +29,7 @@
   --font-sans: var(--font-sans);
   --font-script: var(--font-script);
   --font-devanagari: var(--font-devanagari);
+  --font-serif: var(--font-serif);
 }
 
 body {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Caveat, Noto_Sans_Devanagari } from "next/font/google";
+import { Inter, Caveat, Newsreader, Noto_Sans_Devanagari } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,6 +10,13 @@ const inter = Inter({
 const caveat = Caveat({
   variable: "--font-script",
   weight: ["600"],
+  subsets: ["latin"],
+});
+
+const newsreader = Newsreader({
+  variable: "--font-serif",
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
 });
 
@@ -32,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${caveat.variable} ${notoDevanagari.variable} h-full antialiased`}
+      className={`${inter.variable} ${caveat.variable} ${newsreader.variable} ${notoDevanagari.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-text font-sans">
         {children}

@@ -4,11 +4,8 @@ export default function About() {
       <div className="max-w-2xl border-t-[0.5px] border-border pt-12">
         <h2 className="text-2xl font-semibold text-text md:text-3xl">About</h2>
         <p className="mt-5 text-base leading-relaxed text-text-secondary">
-          Anjaneya Tech Labs is an independent software studio designed and
-          built in Kochi, Kerala. We build self-hosted-first tools — software
-          you own and run yourself, without handing your data to a third
-          party. Every product here is live, in daily use, and built to solve
-          a real problem rather than chase a trend.
+          Anjaneya Tech Labs is a software studio based in Kochi, Kerala. We
+          build tools for real problems — built in India. 🇮🇳
         </p>
       </div>
     </section>

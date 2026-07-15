@@ -4,7 +4,6 @@ type Project = {
   name: string;
   status: Status;
   description: string;
-  href: string;
   icon: React.ReactNode;
 };
 
@@ -21,7 +20,6 @@ const projects: Project[] = [
     name: "Daily Cause List",
     status: "LIVE",
     description: "Court cause lists on WhatsApp, ₹199/mo.",
-    href: "#contact",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={iconClass}>
         <rect x="4" y="3" width="16" height="18" rx="1.5" />
@@ -33,7 +31,6 @@ const projects: Project[] = [
     name: "Grabha",
     status: "LIVE",
     description: "Download video and audio, self-hosted.",
-    href: "https://grabha.in",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={iconClass}>
         <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5" />
@@ -45,7 +42,6 @@ const projects: Project[] = [
     name: "digiSeva",
     status: "DEV",
     description: "Subscriptions and bills, never missed.",
-    href: "#contact",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={iconClass}>
         <rect x="3.5" y="4.5" width="17" height="16" rx="1.5" />
@@ -58,7 +54,6 @@ const projects: Project[] = [
     name: "Kshethradanam",
     status: "LIVE",
     description: "A virtual journey through Kerala's temples.",
-    href: "https://kshethradanam.org",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={iconClass}>
         <path d="M12 2 8 8h8L12 2Z" />
@@ -92,15 +87,6 @@ export default function Projects() {
 
             <h3 className="mt-4 text-lg font-medium text-text">{project.name}</h3>
             <p className="mt-1 text-sm text-text-secondary">{project.description}</p>
-
-            <a
-              href={project.href}
-              target={project.href.startsWith("http") ? "_blank" : undefined}
-              rel={project.href.startsWith("http") ? "noreferrer" : undefined}
-              className="mt-4 inline-block text-sm text-gold hover:underline"
-            >
-              Learn more →
-            </a>
           </div>
         ))}
       </div>
